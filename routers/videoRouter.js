@@ -7,8 +7,7 @@ import {
     editVideo,
     deleteVideo
   } from "../controllers/videoController";
-var videoRouter = express.Router();
-export default videoRouter;
+const videoRouter = express.Router();
 
 
 videoRouter.get(routes.videos, videos);
@@ -16,6 +15,7 @@ videoRouter.get(routes.upload, upload);
 videoRouter.get(routes.videoDetail, videoDetail);
 videoRouter.get(routes.editVideo, editVideo);
 videoRouter.get(routes.deleteVideo, deleteVideo);
+export default videoRouter;
 /* 
 const VIDEOS = "/videos";
 const UPLOAD = "/upload";

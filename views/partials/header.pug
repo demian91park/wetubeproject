@@ -1,0 +1,14 @@
+header.header
+    .header_column
+        a(href=routes.home)
+            i.fab.fa-youtube
+    .header_column
+        form(action=routes.Search, method="get")
+            input(type="text", placeholder="Search by term..", name="term")
+    .header_column
+        ul
+            li
+                a(href=routes.join) Join
+            li
+                a(href=routes.login) Log In
+                //이동하는곳의 경로를 문자처리하면안됨
